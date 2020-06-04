@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #61dafb;
 }
 
 .App-link {
@@ -28,8 +28,23 @@
   height: 200px;
   width: 100px;
   overflow-y: auto;
+  font-size: larger;
 }
 
 h1 {
   color: white;
+  margin: 6px;
+}
+
+.counterButton {
+  margin: 5px;
+  font-weight: bolder;
+  font-size: larger;
+  border-radius: 5px;
+  background-color: #61dafb;
+  box-shadow: 2px 2px 2px royalblue;
+}
+
+.counterButton:hover {
+  border: 2px solid rgb(34, 34, 173);
 }
