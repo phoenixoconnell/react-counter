@@ -1,10 +1,25 @@
 import React from 'react'
 
-export default function ButtonPad() {
+function ButtonPad(props) {
+
+
     return (
         <div>
-            <button>Up Button</button>
-            <button>Down Button</button>
+            <div>
+                <button className="counterButton" onClick={() => props.updateCount(-10)}>-10</button>
+                <button className="counterButton" onClick={() => props.updateCount(-5)}>-5</button>
+                <button className="counterButton" onClick={() => props.updateCount(-2)}>-2</button>
+                <button className="counterButton" onClick={() => props.updateCount(-1)}>-1</button>
+                <button className="counterButton" onClick={() => props.updateCount(1)}>+1</button>
+                <button className="counterButton" onClick={() => props.updateCount(2)}>+2</button>
+                <button className="counterButton" onClick={() => props.updateCount(5)}>+5</button>
+                <button className="counterButton" onClick={() => props.updateCount(10)}>+10</button>
+            </div>
+            <div>
+                <button className="counterButton" onClick={props.resetCount}>Reset</button>
+            </div>
         </div>
     )
 }
+
+export default ButtonPad;
