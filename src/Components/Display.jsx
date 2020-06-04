@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 function Display(props) {
-    // const [display,setDisplay] = useState(0);
-
     return (
         <section className="display">
-            This is the Display for the Counter.
+            {props.runningCount.map((v, i) => 
+                <h1 key={i}>{v}</h1>
+            )}
         </section>
     )
 
